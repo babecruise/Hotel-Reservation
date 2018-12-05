@@ -1,0 +1,22 @@
+    
+      body{
+        background-color: bisque;
+        color: rgb(26, 27, 29);
+        background-image: url("villa-lorena-pool-terrace-santorini.jpg");
+        }
+  
+        .container{
+          margin-top: 90px;
+        }
+  
+               .col-sm{
+           background-color: aliceblue;
+           padding: 40px;
+           margin: 20px
+         }
+  
+         .col{
+          background-color: aliceblue;
+           padding: 40px;
+           margin: 20px
+         }
