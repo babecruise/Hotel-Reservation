@@ -2,6 +2,7 @@ function validateForm() {
     var firstName = document.forms["myForm"]["fname"].value;
     var lastName = document.forms["myForm"]["lname"].value;
     var number = document.forms["myForm"]["number"].value;
+    var email = document.forms["myForm"]["email"].value;
     if (firstName == "") {
         alert("Name must be filled out");
         return false;
@@ -51,10 +52,13 @@ function calculator() {
   }
 
 
-  var form = document.getElementById('form');
-  form.addEventListener('hidden', function(event) {
-    event.preventDefault();
-    calculator();
+  var formElement = document.getElementById('form');
+
+
+  formElement.addEventListener('submit', function(event) {
+    if (validateForm() == false) {
+      event.preventDefault();
+    }
   });
 
   var daysElement = document.getElementById('days');
